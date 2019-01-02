@@ -1,0 +1,14 @@
+{
+  "name": "@udock/vue-cli-plugin-udock",
+  "version": "0.0.1",
+  "description": "@udock/vue-cli-plugin-udock",
+  "repository": {},
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "dependencies": {
+    "@udock/bootstrap": "^0.0.1"
+  },
+  "license": "MIT"
+}
