@@ -8,7 +8,7 @@
     "index.js"
   ],
   "dependencies": {
-    "@udock/bootstrap": "^0.0.1"
+    "@udock/bootstrap": "^0.0.2"
   },
   "license": "MIT"
 }
