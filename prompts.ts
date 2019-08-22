@@ -10,7 +10,7 @@ module.exports = [
           plugin: '@udock/vue-plugin-auto-router',
           package: {
             devDependencies: {
-              '@udock/vue-plugin-auto-router': '^0.0.2'
+              '@udock/vue-plugin-auto-router': '^0.1.0'
             }
           }
         },
@@ -25,7 +25,7 @@ module.exports = [
               'axios': '^0.18.0'
             },
             devDependencies: {
-              '@udock/vue-plugin-mock': '^0.0.3'
+              '@udock/vue-plugin-mock': '^0.1.0'
             }
           }
         },
@@ -40,10 +40,12 @@ module.exports = [
               'element-ui': '^2.0.0'
             },
             devDependencies: {
-              '@udock/vue-plugin-element-ui': '^0.0.2'
+              '@udock/vue-plugin-element-ui': '^0.1.0'
             }
-          }
-        }
+          },
+          template: false
+        },
+        checked: true
       },
       {
         name: 'data share',
@@ -51,9 +53,10 @@ module.exports = [
           plugin: '@udock/vue-plugin-data--share',
           package: {
             devDependencies: {
-              '@udock/vue-plugin-data--share': '^0.0.1'
+              '@udock/vue-plugin-data--share': '^0.1.0'
             }
-          }
+          },
+          template: false
         }
       },
       {
@@ -62,9 +65,10 @@ module.exports = [
           plugin: '@udock/vue-plugin-data--vuex',
           package: {
             devDependencies: {
-              '@udock/vue-plugin-data--vuex': '^0.0.1'
+              '@udock/vue-plugin-data--vuex': '^0.1.0'
             }
-          }
+          },
+          template: false
         }
       },
       {
@@ -73,7 +77,7 @@ module.exports = [
           plugin: '@udock/debug',
           package: {
             devDependencies: {
-              '@udock/debug': '^0.0.4'
+              '@udock/debug': '^0.1.0'
             }
           }
         }

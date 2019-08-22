@@ -13,7 +13,7 @@ module.exports = function (api, options, rootOptions) {
         if (config.package) {
             api.extendPackage(config.package);
         }
-        if (options.template !== false) {
+        if (config.template !== false) {
             api.render(options.template || "./templates/" + pluginName);
         }
     }

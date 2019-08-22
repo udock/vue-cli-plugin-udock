@@ -12,7 +12,7 @@ module.exports = (api: any, options: any, rootOptions: any) => {
     if (config.package) {
       api.extendPackage(config.package)
     }
-    if (options.template !== false) {
+    if (config.template !== false) {
       api.render(options.template || `./templates/${pluginName}`)
     }
   }
