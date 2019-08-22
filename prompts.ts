@@ -40,6 +40,7 @@ module.exports = [
               'element-ui': '^2.0.0'
             },
             devDependencies: {
+              '@udock/vue-plugin-ui': '^0.1.0',
               '@udock/vue-plugin-element-ui': '^0.1.0'
             }
           },
