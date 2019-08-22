@@ -5,7 +5,10 @@
   "repository": {},
   "main": "index.js",
   "files": [
-    "index.js"
+    "index.js",
+    "generator.js",
+    "prompts.js",
+    "templates"
   ],
   "dependencies": {
     "@udock/bootstrap": "^0.0.3"
