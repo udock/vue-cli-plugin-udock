@@ -1,6 +1,4 @@
 module.exports = (api: any, options: any, rootOptions: any) => {
-  console.log(options)
-
   api.extendPackage({
     scripts: {
       'udock:setup': 'vue invoke @udock/udock'
@@ -9,16 +7,16 @@ module.exports = (api: any, options: any, rootOptions: any) => {
       '@udock/vue-bootstrap': '^0.0.2'
     }
   })
-  api.render('./template')
+  api.render('./templates/@udock/vue-bootstrap')
 
-  for (const plugin of options.plugins) {
-    const [pluginName, pluginVersion] = plugin.split('#')
+  for (const config of options.plugins) {
+    const pluginName = config.plugin
     options.plugins[pluginName] = true
-    api.extendPackage({
-      devDependencies: {
-        [`@udock/${pluginName}`]: pluginVersion
-      }
-    })
-    api.render(`./template-${pluginName}`)
+    if (config.package) {
+      api.extendPackage(config.package)
+    }
+    if (options.template !== false) {
+      api.render(options.template || `./templates/${pluginName}`)
+    }
   }
 }
