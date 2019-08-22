@@ -1,6 +1,6 @@
 {
   "name": "@udock/vue-cli-plugin-udock",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "@udock/vue-cli-plugin-udock",
   "repository": {},
   "main": "index.js",
@@ -11,7 +11,7 @@
     "templates"
   ],
   "dependencies": {
-    "@udock/bootstrap": "^0.0.3"
+    "@udock/vue-bootstrap": "^0.0.3"
   },
   "license": "MIT",
   "devDependencies": {
