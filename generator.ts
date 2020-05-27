@@ -1,4 +1,14 @@
-module.exports = (api: any, options: any, rootOptions: any) => {
+const dependencieVersionMap = require('./dependencieVersionMap.json')
+
+function resolvePackageJson (pkg: any, pluginName: string) {
+  pkg = pkg || {}
+  const deps = dependencieVersionMap[pluginName]
+  Object.assign(pkg.dependencies, deps.dependencies)
+  Object.assign(pkg.devDependencies, deps.devDependencies)
+  return pkg
+}
+
+export = (api: any, options: any, rootOptions: any) => {
   api.extendPackage({
     scripts: {
       'udock:setup': 'vue invoke @udock/udock'
@@ -10,7 +20,7 @@ module.exports = (api: any, options: any, rootOptions: any) => {
     const pluginName = config.plugin
     options.plugins[pluginName] = true
     if (config.package) {
-      api.extendPackage(config.package)
+      api.extendPackage(resolvePackageJson(config.package, pluginName))
     }
     if (config.template !== false) {
       api.render(options.template || `./templates/${pluginName}`)

@@ -9,11 +9,6 @@ module.exports = [
                 name: 'auto router',
                 value: {
                     plugin: '@udock/vue-plugin-auto-router',
-                    package: {
-                        devDependencies: {
-                            '@udock/vue-plugin-auto-router': '^0.1.0'
-                        }
-                    }
                 },
                 checked: true
             },
@@ -21,14 +16,22 @@ module.exports = [
                 name: 'mock',
                 value: {
                     plugin: '@udock/vue-plugin-mock',
-                    package: {
-                        dependencies: {
-                            'axios': '^0.18.0'
-                        },
-                        devDependencies: {
-                            '@udock/vue-plugin-mock': '^0.1.0'
-                        }
-                    }
+                },
+                checked: true
+            },
+            {
+                name: 'ui',
+                value: {
+                    plugin: '@udock/vue-plugin-ui',
+                    template: false
+                },
+                checked: true
+            },
+            {
+                name: 'ui-form',
+                value: {
+                    plugin: '@udock/vue-plugin-ui--form',
+                    template: false
                 },
                 checked: true
             },
@@ -36,15 +39,6 @@ module.exports = [
                 name: 'element ui',
                 value: {
                     plugin: '@udock/vue-plugin-element-ui',
-                    package: {
-                        dependencies: {
-                            'element-ui': '^2.0.0'
-                        },
-                        devDependencies: {
-                            '@udock/vue-plugin-ui': '^0.1.0',
-                            '@udock/vue-plugin-element-ui': '^0.1.0'
-                        }
-                    },
                     template: false
                 },
                 checked: true
@@ -53,11 +47,13 @@ module.exports = [
                 name: 'data share',
                 value: {
                     plugin: '@udock/vue-plugin-data--share',
-                    package: {
-                        devDependencies: {
-                            '@udock/vue-plugin-data--share': '^0.1.0'
-                        }
-                    },
+                    template: false
+                }
+            },
+            {
+                name: 'data storage',
+                value: {
+                    plugin: '@udock/vue-plugin-data--storage',
                     template: false
                 }
             },
@@ -65,23 +61,34 @@ module.exports = [
                 name: 'data vuex',
                 value: {
                     plugin: '@udock/vue-plugin-data--vuex',
-                    package: {
-                        devDependencies: {
-                            '@udock/vue-plugin-data--vuex': '^0.1.0'
-                        }
-                    },
+                    template: false
+                }
+            },
+            {
+                name: 'data async',
+                value: {
+                    plugin: '@udock/vue-plugin-data--async',
+                    template: false
+                }
+            },
+            {
+                name: 'data await',
+                value: {
+                    plugin: '@udock/vue-plugin-data--await',
+                    template: false
+                }
+            },
+            {
+                name: 'i18n',
+                value: {
+                    plugin: '@udock/vue-plugin-i18n',
                     template: false
                 }
             },
             {
                 name: 'debug',
                 value: {
-                    plugin: '@udock/debug',
-                    package: {
-                        devDependencies: {
-                            '@udock/debug': '^0.1.0'
-                        }
-                    }
+                    plugin: '@udock/debug'
                 }
             }
         ]

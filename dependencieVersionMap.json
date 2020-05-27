@@ -1,0 +1,91 @@
+{
+  "vue-plugin-auto-router": {
+    "devDependencies": {
+      "vue-plugin-auto-router": "^0.1.1"
+    }
+  },
+  "vue-plugin-mock": {
+    "devDependencies": {
+      "vue-plugin-mock": "^0.1.0"
+    }
+  },
+  "vue-plugin-ui": {
+    "devDependencies": {
+      "vue-plugin-ui": "^0.1.0"
+    }
+  },
+  "vue-plugin-ui--form": {
+    "dependencies": {
+      "lodash": "^4.17.4",
+      "vue": "^2.5.2"
+    },
+    "devDependencies": {
+      "vue-plugin-ui--form": "^0.1.0"
+    }
+  },
+  "vue-plugin-element-ui": {
+    "dependencies": {
+      "element-ui": "^1.3.7 || ^2.0.0",
+      "@udock/vue-plugin-ui": "^0.1.0"
+    },
+    "devDependencies": {
+      "vue-plugin-element-ui": "^0.1.0"
+    }
+  },
+  "vue-plugin-data--share": {
+    "dependencies": {
+      "lodash": "^4.17.4",
+      "vue": "^2.5.2",
+      "@udock/vue-plugin-data": "^0.1.0"
+    },
+    "devDependencies": {
+      "vue-plugin-data--share": "^0.1.0"
+    }
+  },
+  "vue-plugin-data--storage": {
+    "dependencies": {
+      "lodash": "^4.17.4"
+    },
+    "devDependencies": {
+      "vue-plugin-data--storage": "^0.1.0"
+    }
+  },
+  "vue-plugin-data--vuex": {
+    "dependencies": {
+      "lodash": "^4.17.4"
+    },
+    "devDependencies": {
+      "vue-plugin-data--vuex": "^0.0.1"
+    }
+  },
+  "vue-plugin-data--async": {
+    "dependencies": {
+      "lodash": "^4.17.4"
+    },
+    "devDependencies": {
+      "vue-plugin-data--async": "^0.1.0"
+    }
+  },
+  "vue-plugin-data--await": {
+    "dependencies": {
+      "lodash": "^4.17.4",
+      "vue": "^2.5.2"
+    },
+    "devDependencies": {
+      "vue-plugin-data--await": "^0.1.0"
+    }
+  },
+  "vue-plugin-i18n": {
+    "dependencies": {
+      "vue-i18n": "^7.0.5"
+    },
+    "devDependencies": {
+      "vue-plugin-i18n": "^0.1.0"
+    }
+  },
+  "debug": {
+    "devDependencies": {
+      "debug": "^0.1.2"
+    }
+  }
+}
