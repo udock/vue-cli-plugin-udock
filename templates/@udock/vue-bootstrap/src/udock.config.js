@@ -11,7 +11,7 @@ module.exports = {
         ]
       }
     ]<%}if(has('@udock/vue-plugin-element-ui')){%>['element-ui', {
-      theme: `element-ui/packages/theme-chalk/src/base.scss`,
+      theme: 'element-ui/packages/theme-chalk/src/base.scss',
       // 'pre-styles': [`~@/themes/var.scss`],
       components: [
         'grid',
