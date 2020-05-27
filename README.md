@@ -26,7 +26,7 @@ cd vue-project
 npm i @udock/vue-cli-plugin-udock
 
 # 初始化基础配置
-vue @udock/udock
+vue invoke @udock/udock
 
 # 可根据需要，安装配置插件
 # * mock 模拟数据支持

@@ -1,6 +1,6 @@
 {
   "name": "@udock/vue-cli-plugin-udock",
-  "version": "0.1.2",
+  "version": "0.1.3",
   "description": "@udock/vue-cli-plugin-udock",
   "repository": {},
   "main": "index.js",
@@ -8,6 +8,8 @@
     "index.js",
     "generator.js",
     "prompts.js",
+    "genDependencieVersionMap.js",
+    "dependencieVersionMap.json",
     "templates"
   ],
   "dependencies": {
