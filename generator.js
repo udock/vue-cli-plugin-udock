@@ -1,11 +1,11 @@
 "use strict";
 var dependencieVersionMap = require('./dependencieVersionMap.json');
-function resolvePackageJson(pkg, pluginName) {
-    pkg = pkg || {};
+function resolvePackageJson(pluginName) {
     var deps = dependencieVersionMap[pluginName];
-    Object.assign(pkg.dependencies, deps.dependencies);
-    Object.assign(pkg.devDependencies, deps.devDependencies);
-    return pkg;
+    return {
+        dependencies: deps && deps.dependencies,
+        devDependencies: deps && deps.devDependencies
+    };
 }
 module.exports = function (api, options, rootOptions) {
     api.extendPackage({
@@ -18,9 +18,7 @@ module.exports = function (api, options, rootOptions) {
         var config = _a[_i];
         var pluginName = config.plugin;
         options.plugins[pluginName] = true;
-        if (config.package) {
-            api.extendPackage(resolvePackageJson(config.package, pluginName));
-        }
+        api.extendPackage(resolvePackageJson(pluginName));
         if (config.template !== false) {
             api.render(options.template || "./templates/" + pluginName);
         }
